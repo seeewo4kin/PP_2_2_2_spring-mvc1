@@ -1,12 +1,10 @@
 package web.dao;
+
 import org.springframework.stereotype.Repository;
 import web.model.Car;
-import org.springframework.stereotype.Component;
-
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.List;
-import java.util.stream.Collectors;
+
 
 @Repository
 public class CarDaoImp implements CarDao {

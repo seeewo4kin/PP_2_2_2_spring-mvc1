@@ -6,14 +6,20 @@
     <title>CARS</title>
 </head>
 <body>
-<div>
-    <h1 th:text="${header}"></h1>
-</div>
 <br>
 <div>
-    <th:block th:each="msg : ${cars}">
-        <h1 th:text="${msg.toStringFormatted()}"></h1>
-    </th:block>
+    <table border="1">
+        <tr>
+            <th>Year of Buidling</th>
+            <th>Model</th>
+            <th>Owner Name</th>
+        </tr>
+        <tr th:each = "car : ${cars}">
+            <td th:utext = "${car.getYearOfBuilding()}">...</td>
+            <td th:utext = "${car.getModel()}">...</td>
+            <td th:utext = "${car.getNameOfOwner()}">...</td>
+        </tr>
+    </table>
 </div>
 </body>
 </html>

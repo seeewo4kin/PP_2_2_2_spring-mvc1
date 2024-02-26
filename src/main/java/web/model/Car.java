@@ -7,7 +7,6 @@ public class Car {
     private int yearOfBuilding;
     private String model;
     private String nameOfOwner;
-    private static String header = "Year of building/" + ' ' + "Model/" + ' ' + "OwnerName";
 
     public Car() {
     }
@@ -50,12 +49,7 @@ public class Car {
                 ", nameOfOwner='" + nameOfOwner + '\'' +
                 '}';
     }
-        public String toStringFormatted() {
-            return yearOfBuilding + "/           " + model + "/          " + nameOfOwner;
-        }
 
-        public String header() {
-            return header;
-    }
+
 
 }
